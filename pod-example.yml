@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod                                           
+metadata:
+  name: j-listener-pod                                 
+spec:                                                
+  containers:
+    - image: java-listener	
+      name: j-listener                             
+      ports:
+        - containerPort: 5000
+      imagePullPolicy: Never
